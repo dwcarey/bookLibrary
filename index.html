@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+    <button class="popupButton" onclick="openForm()">Add Book</button>
+    <div class="formPopup" id="formPopup">
+        <form id="bookForm">
+            <ul id="bookFormList">
+                <li>
+                    <label for="bookTitle">TITLE
+                        <input type="text" name="bookTitle" id="bookTitle" maxlength="40" required>
+                        <span class = "error bookTitleError"></span>
+                    </label>
+                </li>
+                <li>
+                    <label for="bookAuthor">AUTHOR
+                        <input type="text" name="bookAuthor" id="bookAuthor" maxlength="40" required>
+                        <span class = "error bookAuthorError"></span>
+                    </label>
+                </li>
+                <li>
+                    <label for="bookPages">PAGES
+                        <input type="number" name="bookPages" id="bookPages" max="99999" required>
+                        <span class = "error bookPagesError"></span>
+                    </label>
+                </li>
+                <li>
+                    <label for="bookRead">HAVE READ?
+                        <select name="bookRead" id="bookRead">
+                            <option selected>YES</option>
+                            <option>NO</option>
+                        </select>
+                        <span class = "error bookReadError"></span>
+                    </label>
+                </li>
+                <li>
+                    <label for="submitButton">
+                        <button type="submit" name="submitButton" id="submitButton">Submit</button>
+                        <span class = "error submnitButtonError"></span>
+                    </label> 
+                    <label for="closeButton">
+                        <button type="button" name="closeButton" id="closeButton">Cancel</button>
+                        <span class = "error closeButtonError"></span>
+                    </label>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    <div class="cardsContainer">
+        <div class="cardHolder" id="cardHolder">
+
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
