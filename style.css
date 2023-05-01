@@ -58,7 +58,7 @@ body {
 	grid-row-start: 2;
 }
 
-div.cardHolder > * {
+.card {
 	font-size: 1.2rem;
 	border: 3px solid rgb(16, 0, 105);
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -197,4 +197,9 @@ div.cardHolder > * {
 
   div.cardHolder > div > button:hover {
 	background-color: #8952a8;
+  }
+
+  h2 {
+	font-weight: 800;
+	font-size: 1.2rem;
   }
